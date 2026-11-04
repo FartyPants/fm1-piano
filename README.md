@@ -4,4 +4,5 @@ This is for me.
 https://youtube.com/shorts/F0iWSD2SiWU?feature=share
 
 
-<img width="1408" height="768" alt="image" src="https://github.com/user-attachments/assets/f2f73858-e0f4-4ac3-b255-cea9ba098f20" />
+
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/f92830ca-a875-4403-b591-48ab89dfcd56" />
