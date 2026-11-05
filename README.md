@@ -21,7 +21,7 @@ anything.
   MIDI when asked; CC 64 is the sustain pedal), or from the computer's keyboard: white keys Q–I and A–K, black keys
   1–0 and -, Enter the sustain pedal (held), Z / X octave down / up, Esc HOME.
 - **The demo:** press PLAY to hear Chopin's Étude Op. 10 No. 1.
-- The knobs turn with the mouse, or with Tab and ↑ ↓ from the keyboard.
+- The knobs: drag one up or down, or scroll over it; from the keyboard, Tab to it and ↑ ↓.
 
 ## What it is
 
