@@ -4,12 +4,24 @@ A piano firmware for the **M-VAVE FM-1**: a work in progress, and you are welcom
 
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/f4e37902-17b4-4d4d-812c-28601f8e7826" />
 
-**Install the current build:** <https://fartypants.github.io/fm1-piano/hybrid/nightly/install/>
-(Chrome or Edge on a computer, or Chrome on Android/ChromeOS, with the FM-1 connected by USB; allow MIDI when asked.)
-**Try it in the browser first:** <https://fartypants.github.io/fm1-piano/hybrid/nightly/emu/>
+**[Install](https://fartypants.github.io/fm1-piano/hybrid/nightly/install/)** (Chrome or Edge, also Chrome on Android or
+Chromebook; the FM-1 on USB) · **[Try it in the browser](https://fartypants.github.io/fm1-piano/hybrid/nightly/emu/)** ·
+**[Manual](https://fartypants.github.io/fm1-piano/hybrid/nightly/manual/)**
 
 Installing replaces what is on your FM-1. The installer's **"Back to the stock firmware"** puts M-VAVE's own firmware
 back (or use M-VAVE's updater, M-UPGRADE).
+
+## Try it in the browser
+
+The [emulator](https://fartypants.github.io/fm1-piano/hybrid/nightly/emu/) runs the same firmware code as the FM-1,
+with its screen, knobs, buttons and keys, and the sound, in Chrome or Edge, so you can hear it before installing
+anything.
+
+- **Play** with the mouse or touch (click the keys and buttons), with a MIDI keyboard connected to the computer (allow
+  MIDI when asked; CC 64 is the sustain pedal), or from the computer's keyboard: white keys Q–I and A–K, black keys
+  1–0 and -, Enter the sustain pedal (held), Z / X octave down / up, Esc HOME.
+- **The demo:** press PLAY to hear Chopin's Étude Op. 10 No. 1.
+- The knobs turn with the mouse, or with Tab and ↑ ↓ from the keyboard.
 
 ## What it is
 
