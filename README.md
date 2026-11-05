@@ -1,4 +1,4 @@
-# 500kB HYBRID GRAND PIANO for FM-1
+# 500kB HYBRID GRAND PIANO for FM-1 (WIP)
 
 A piano firmware for the **M-VAVE FM-1**: a work in progress, and you are welcome to try it.
 The goal was to prove that it can be squeezed to 500kB, and we did it!
