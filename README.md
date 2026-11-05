@@ -2,7 +2,7 @@
 
 A piano firmware for the **M-VAVE FM-1**: a work in progress, and you are welcome to try it.
 
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/f4e37902-17b4-4d4d-812c-28601f8e7826" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/cc4570d2-fb75-4528-a98e-0d64c3ac66fb" />
 
 **[Install](https://fartypants.github.io/fm1-piano/hybrid/nightly/install/)** (Chrome or Edge, also Chrome on Android or
 Chromebook; the FM-1 on USB) · **[Try it in the browser](https://fartypants.github.io/fm1-piano/hybrid/nightly/emu/)** ·
