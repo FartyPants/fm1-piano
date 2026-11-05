@@ -7,7 +7,10 @@ When you try it - press Play to hear the demo song.
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/cc4570d2-fb75-4528-a98e-0d64c3ac66fb" />
 
 **[Install](https://fartypants.github.io/fm1-piano/hybrid/nightly/install/)** (Chrome or Edge, also Chrome on Android or
-Chromebook; the FM-1 on USB) · **[Try it in the browser](https://fartypants.github.io/fm1-piano/hybrid/nightly/emu/)** ·
+Chromebook; the FM-1 on USB) ·
+
+**[Try it in the browser](https://fartypants.github.io/fm1-piano/hybrid/nightly/emu/)** ·
+
 **[Manual](https://fartypants.github.io/fm1-piano/hybrid/nightly/manual/)**
 
 Installing replaces what is on your FM-1. The installer's **"Back to the stock firmware"** puts M-VAVE's own firmware
