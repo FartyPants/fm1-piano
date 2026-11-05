@@ -53,11 +53,5 @@ your saved settings. Feedback is welcome.
 
 ## Credits and licences
 
-- The firmware: GPL-3.0-only.
-- The piano recordings: VCSL, CC0.
+- The KAWAII piano recordings: VCSL, CC0.
 - The sample compression: [QOA](https://github.com/phoboslab/qoa) by Dominic Szablewski, MIT.
-- The key velocity sensing: Velo (GPL-3.0) / fm1-monk.
-- The demo: Chopin, Étude Op. 10 No. 1 (public domain).
-
-There is also an older, purely modelled piano at <https://fartypants.github.io/fm1-piano/nightly/install/>
-(an earlier experiment).
