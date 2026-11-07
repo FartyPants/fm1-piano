@@ -1,0 +1,19 @@
+# Tags (v0.9.99) get a release with the firmware attached (hybrid/nightly/firmware/*.fwsc), so installers and
+# mutant.cloud can find it. A tag with a "-" in it (v1.0.0-beta) is a pre-release.
+name: release
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: hybrid/nightly/firmware/*.fwsc
+          fail_on_unmatched_files: true
+          prerelease: ${{ contains(github.ref_name, '-') }}
