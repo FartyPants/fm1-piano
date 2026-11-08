@@ -10,6 +10,7 @@ When you try it - press Play to hear the demo song.
 ## How to use (video)
 https://www.youtube.com/watch?v=nmWNWhp-ocg
 
+## Install
 **[Install](https://fartypants.github.io/fm1-piano/hybrid/nightly/install/)** (Chrome or Edge, also Chrome on Android or
 Chromebook; the FM-1 on USB) ·
 
