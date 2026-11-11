@@ -146,8 +146,8 @@ kbd { font: 600 .85em ui-monospace, Menlo, monospace; background: var(--card); b
     <div class="pages">
       <div>
         <h3>Sax <span>HOME</span></h3>
-        <p>The sound's name, the keys lit as they sound, the pitch's bend (pitch wheel, pressure, glide) and the pressure.</p>
-        <dl><dt>TONE</dt><dd>Darker to open.</dd><dt>REL</dt><dd>How long a note takes to fade once let go.</dd><dt>AT</dt><dd>How far full pressure bends the note.</dd><dt>REVB</dt><dd>The reverb's level.</dd></dl>
+        <p>The sound's name, the keys lit as they sound, the pitch's bend (pitch wheel, glide) and the growl.</p>
+        <dl><dt>TONE</dt><dd>Darker to open.</dd><dt>REL</dt><dd>How long a note takes to fade once let go.</dd><dt>GROWL</dt><dd>How much the note growls at full pressure.</dd><dt>REVB</dt><dd>The reverb's level.</dd></dl>
       </div>
       <div>
         <h3>Sound <span>ENV</span></h3>
@@ -155,7 +155,7 @@ kbd { font: 600 .85em ui-monospace, Menlo, monospace; background: var(--card); b
       </div>
       <div>
         <h3>Expression <span>ARP</span></h3>
-        <dl><dt>DEPTH</dt><dd>The bend at full pressure, in cents (below 0: down).</dd><dt>SENS</dt><dd>How little pressure reaches the full depth.</dd><dt>KEYS</dt><dd>The FM-1's own keys send their pressure.</dd><dt>BEND</dt><dd>The pitch wheel's range, in semitones.</dd></dl>
+        <dl><dt>GROWL</dt><dd>The growl at full pressure (0: off).</dd><dt>SENS</dt><dd>How little pressure reaches the full growl.</dd><dt>KEYS</dt><dd>The FM-1's own keys send their pressure.</dd><dt>BEND</dt><dd>The pitch wheel's range, in semitones.</dd></dl>
       </div>
       <div>
         <h3>EQ <span>LFO</span></h3>
@@ -178,7 +178,7 @@ kbd { font: 600 .85em ui-monospace, Menlo, monospace; background: var(--card); b
   </div>
   <div>
     <h2>MIDI in</h2>
-    <p>A MIDI keyboard connected to this computer plays it (Chrome or Edge: allow MIDI when asked). Notes on any channel, with velocity; CC 64 is the sustain pedal (down from 64); the pitch wheel bends; channel and poly pressure (aftertouch) bend the note a little.</p>
+    <p>A MIDI keyboard connected to this computer plays it (Chrome or Edge: allow MIDI when asked). Notes on any channel, with velocity; CC 64 is the sustain pedal (down from 64); the pitch wheel bends; channel and poly pressure (aftertouch) make it growl.</p>
   </div>
   <div>
     <h2>Mouse and touch</h2>
@@ -308,7 +308,7 @@ function hit(c, cls, attrs, parent = controls) {
 // playing, REC's dub hold: those are toggle buttons (aria-pressed), the others plain ones
 const TIP = { FX: "The Reverb page; again: the Delay.", SEL: "Nothing yet.", ENV: "The Sound page: tone, release, glide, velocity.",
   LFO: "The EQ page: bass, mid, treble, width.", EDIT: "Nothing yet.", GLO: "The Setup page: CPU, Volume, Tune; again: the keys' touch.",
-  HOME: "The Sax page.", SAVE: "Save the sound to a user preset.", ARP: "The Expression page: the aftertouch and the bend.",
+  HOME: "The Sax page.", SAVE: "Save the sound to a user preset.", ARP: "The Expression page: the growl, the pressure and the bend.",
   SEQ: "The Scale page.", PLAY: "Nothing yet.", REC: "Held: the sustain pedal.",
   "OCT-": "The keys an octave down (to three).", "OCT+": "The keys an octave up (to two).", SELECT: "Nothing yet.",
   ALGORITHM: "Nothing yet.", PRESETS: "Nothing yet.", KNOB1: "The first value on the screen.", KNOB2: "The second value on the screen.",
