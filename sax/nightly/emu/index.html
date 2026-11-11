@@ -146,16 +146,12 @@ kbd { font: 600 .85em ui-monospace, Menlo, monospace; background: var(--card); b
     <div class="pages">
       <div>
         <h3>Sax <span>HOME</span></h3>
-        <p>The sound's name, the keys lit as they sound, the pitch's bend (pitch wheel, glide) and the growl.</p>
-        <dl><dt>TONE</dt><dd>Darker to open.</dd><dt>REL</dt><dd>How long a note takes to fade once let go.</dd><dt>GROWL</dt><dd>How much the note growls at full pressure.</dd><dt>REVB</dt><dd>The reverb's level.</dd></dl>
+        <p>The sound's name, the keys lit as they sound, the pitch's bend (pitch wheel, glide).</p>
+        <dl><dt>TONE</dt><dd>Darker to open.</dd><dt>REL</dt><dd>How long a note takes to fade once let go.</dd><dt>VEL</dt><dd>The velocity curve: soft, normal, hard.</dd><dt>REVB</dt><dd>The reverb's level.</dd></dl>
       </div>
       <div>
         <h3>Sound <span>ENV</span></h3>
         <dl><dt>TONE</dt><dd>Darker to open.</dd><dt>REL</dt><dd>The release, 20 ms to 2 s.</dd><dt>GLIDE</dt><dd>A slurred note slides from the last one's pitch.</dd><dt>VEL</dt><dd>The velocity curve: soft, normal, hard.</dd></dl>
-      </div>
-      <div>
-        <h3>Expression <span>ARP</span></h3>
-        <dl><dt>GROWL</dt><dd>The growl at full pressure (0: off).</dd><dt>SENS</dt><dd>How little pressure reaches the full growl.</dd><dt>KEYS</dt><dd>The FM-1's own keys send their pressure.</dd><dt>BEND</dt><dd>The pitch wheel's range, in semitones.</dd></dl>
       </div>
       <div>
         <h3>EQ <span>LFO</span></h3>
@@ -163,7 +159,7 @@ kbd { font: 600 .85em ui-monospace, Menlo, monospace; background: var(--card); b
       </div>
       <div>
         <h3>Setup <span>GLO</span></h3>
-        <p>How hard the FM-1 is working, Volume and Tune; GLO again: the keys' touch.</p>
+        <p>How hard the FM-1 is working, Volume, Tune and Bend (the pitch wheel's range); GLO again: the keys' touch.</p>
       </div>
     </div>
     <p><b>FX</b> is the reverb (again: the delay), <b>SEQ</b> the scale, <b>SAVE</b> stores the sound to a user preset.</p>
@@ -173,12 +169,12 @@ kbd { font: 600 .85em ui-monospace, Menlo, monospace; background: var(--card); b
     <ul>
       <li>The <b>keys</b> play F3 to G5; <b>OCT−</b> / <b>OCT+</b> move them an octave (three down, two up).</li>
       <li><b>REC</b> held is the sustain pedal.</li>
-      <li><b>HOME</b> the Sax page, <b>ENV</b> Sound, <b>ARP</b> Expression, <b>LFO</b> EQ, <b>FX</b> Reverb and Delay, <b>SEQ</b> Scale, <b>GLO</b> Setup.</li>
+      <li><b>HOME</b> the Sax page, <b>ENV</b> Sound, <b>LFO</b> EQ, <b>FX</b> Reverb and Delay, <b>SEQ</b> Scale, <b>GLO</b> Setup.</li>
     </ul>
   </div>
   <div>
     <h2>MIDI in</h2>
-    <p>A MIDI keyboard connected to this computer plays it (Chrome or Edge: allow MIDI when asked). Notes on any channel, with velocity; CC 64 is the sustain pedal (down from 64); the pitch wheel bends; channel and poly pressure (aftertouch) make it growl.</p>
+    <p>A MIDI keyboard connected to this computer plays it (Chrome or Edge: allow MIDI when asked). Notes on any channel, with velocity; CC 64 is the sustain pedal (down from 64); the pitch wheel bends (its range: BEND on the Setup page); aftertouch is ignored.</p>
   </div>
   <div>
     <h2>Mouse and touch</h2>
@@ -307,8 +303,8 @@ function hit(c, cls, attrs, parent = controls) {
 // what each control does (the Buttons list below says the same); a page button's light is its page, PLAY's
 // playing, REC's dub hold: those are toggle buttons (aria-pressed), the others plain ones
 const TIP = { FX: "The Reverb page; again: the Delay.", SEL: "Nothing yet.", ENV: "The Sound page: tone, release, glide, velocity.",
-  LFO: "The EQ page: bass, mid, treble, width.", EDIT: "Nothing yet.", GLO: "The Setup page: CPU, Volume, Tune; again: the keys' touch.",
-  HOME: "The Sax page.", SAVE: "Save the sound to a user preset.", ARP: "The Expression page: the growl, the pressure and the bend.",
+  LFO: "The EQ page: bass, mid, treble, width.", EDIT: "Nothing yet.", GLO: "The Setup page: CPU, Volume, Tune, Bend; again: the keys' touch.",
+  HOME: "The Sax page.", SAVE: "Save the sound to a user preset.", ARP: "Nothing.",
   SEQ: "The Scale page.", PLAY: "Nothing yet.", REC: "Held: the sustain pedal.",
   "OCT-": "The keys an octave down (to three).", "OCT+": "The keys an octave up (to two).", SELECT: "Nothing yet.",
   ALGORITHM: "Nothing yet.", PRESETS: "Nothing yet.", KNOB1: "The first value on the screen.", KNOB2: "The second value on the screen.",
