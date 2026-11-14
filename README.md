@@ -61,3 +61,5 @@ your saved settings or turn the entire instrument into a kazoo.
 
 - The KAWAII piano recordings: VCSL, CC0.
 - The compression: [QOA](https://github.com/phoboslab/qoa) by Dominic Szablewski, MIT.
+
+You can also try FM-1 Piano in the browser, no flashing needed, in the free community [FM-1 Emulator](https://fm1-emulator.atst.tools/).
